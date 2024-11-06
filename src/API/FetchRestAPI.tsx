@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React, {useEffect, useState} from 'react';
-import Post from './Post';
+import PostCard from './components/PostCard';
 
 export default function FetchRestAPI() {
   const [data, setData] = useState<any>('');
@@ -20,7 +20,7 @@ export default function FetchRestAPI() {
   return (
     <View style={{flex: 1}}>
       <Text style={{textAlign: 'center', fontSize: 28}}>API Call</Text>
-      <View style={{flex: 1}}>{data && <Post data={data} />}</View>
+      <View style={{flex: 1}}>{data && <PostCard data={data} />}</View>
     </View>
   );
 }

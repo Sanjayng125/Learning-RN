@@ -30,6 +30,9 @@ import FetchRestAPI from './API/FetchRestAPI';
 import APIDataList from './API/APIDataList';
 import FetchFromJSONServer from './API/FetchFromJSONServer';
 import PostDataToJSONServer from './API/PostDataToJSONServer';
+import RefExample from './components/RefExample';
+import AsyncStorageExample from './AsyncStorage/AsyncStorageExample';
+import ReduxStore from './reduxUI/ReduxStore';
 
 export default function App() {
   const a = 'JSX Example';
@@ -88,8 +91,14 @@ export default function App() {
       {/* <FetchRestAPI /> */}
       {/* <APIDataList /> */}
       {/* JSON-Server */}
-      <FetchFromJSONServer />
+      {/* <FetchFromJSONServer /> */}
       {/* <PostDataToJSONServer /> */}
+
+      {/* <RefExample /> */}
+      {/* <AsyncStorageExample /> */}
+
+      {/* Redux */}
+      <ReduxStore />
     </View>
   );
 }

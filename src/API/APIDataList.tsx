@@ -1,6 +1,6 @@
 import {FlatList, ScrollView, StyleSheet, Text, View} from 'react-native';
 import React, {useEffect, useState} from 'react';
-import Post from './Post';
+import PostCard from './components/PostCard';
 
 export default function APIDataList() {
   const [data, setData] = useState<PostProps[]>([]);
@@ -23,7 +23,7 @@ export default function APIDataList() {
         <ScrollView style={styles.scrollContainer}>
           <View>
             {data.map((item, index) => (
-              <Post key={index} data={item} />
+              <PostCard key={index} data={item} />
             ))}
           </View>
         </ScrollView>

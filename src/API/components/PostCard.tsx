@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-export default function Post({
+export default function PostCard({
   data,
 }: {
   data: {id: number; title: string; body: string; userId: number};
